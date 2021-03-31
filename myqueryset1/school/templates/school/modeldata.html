@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Data Table</title>
+    <style>
+        body{
+            background-color:skyblue;
+        }
+        table,tr,th,td{
+            border:2px solid blue;
+            border-collapse:collapse;
+        }
+        a{
+            margin-left:320px;
+        }
+    </style>
+</head>
+<body>
+        <h1 align='center'>The Model Data will Come Here</h1>
+                <table align='center'>
+                        
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>ROLL</th>
+                            <th>CITY</th>
+                            <th>MARKS</th>
+                            <th>PASSING YEAR</th>
+                        
+                 
+                            <tr>
+                                <td>{{model.id}}</td>
+                                <td>{{model.name}}</td>
+                                <td>{{model.roll}}</td>   
+                                <td>{{model.city}}</td>
+                                <td>{{model.marks}}</td>
+                                <td>{{model.passing_year}}</td>
+                            </tr>
+
+                </table><br>
+                <a  href="#" >Home</a>
+                <a  href="#" >Back</a>
+                <h1>The Applied Queries Are-----</h1>
+                    {{query}}<br>
+                    <h2>The selected persons are in the form of dictionary:-<br></h2>
+                    <p>{{model}}</p>
+</body>
+</html>
